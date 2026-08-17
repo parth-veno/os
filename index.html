@@ -2,7 +2,15 @@
 <html>
 
   <body style="background-color: #c9ffcf; background-image: url(./bcg.jpeg); background-size: cover; font-family: Arial, Helvetica, sans-serif;">
-    <div style="border: solid; width: fit-content; border-radius:20px; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-colour: black">
+    <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between;">
+      <p style="margin-left: 16px;">
+        Thomas Os
+      </p>
+      <p id="timeElement" style="margin-right: 16px;">
+        6/21/2023 3:41 PM
+      </p>
+    </div>
+    <div style="border: solid; background-color: pink; width: fit-content; border-radius:20px; padding: 20px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
         <h1 style="margin: 8px; padding: 2px; padding-top: 5px; background-color: black; color: white; font-family: Arial;">FIRST</h1>
         <h2>H2</h2>
         <p>hellp world!!!</p>
@@ -17,6 +25,11 @@
         <p><abbr title="abbreviation">abbr</abbr> is a tag that marks an abbreviated term</p>
         <p style="color: red"> RED </p>
     </div>
+    <script>
+      var currentTime = new Date().toLocaleString();
+      var timeText = document.querySelector("#timeElement");
+      timeText.innerHTML = currentTime;
+    </script>
   </body>
 
 </html>

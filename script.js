@@ -1,9 +1,9 @@
 setInterval(function () {
         document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
       }, 1000);
-      
+
 // Make the DIV element draggable:
-dragElement(document.getElementById("mydiv"));
+dragElement(document.getElementById("draggableDiv"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {

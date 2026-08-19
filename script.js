@@ -3,7 +3,7 @@ setInterval(function () {
       }, 1000);
 
 // Make the DIV element draggable:
-dragElement(document.getElementById("draggableDiv"));
+dragElement(document.getElementById("windowDiv"));
 
 // Step 1: Define a function called `dragElement` that makes an HTML element draggable.
 function dragElement(element) {

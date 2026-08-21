@@ -6,13 +6,6 @@ updateTime();
 setInterval(updateTime, 1000);
 
 // Make the DIV element draggable:
-function updateTime() {
-  document.querySelector("#timeElement").textContent =
-    new Date().toLocaleString();
-}
-updateTime();
-setInterval(updateTime, 1000);
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
@@ -53,6 +46,7 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+dragElement(document.getElementById("mydiv"));
 
 var welcomeScreen = document.querySelector("#mydiv");
 function closeWindow(element) {

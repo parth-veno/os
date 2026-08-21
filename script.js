@@ -1,9 +1,17 @@
-setInterval(function () {
-        document.querySelector("#timeElement").innerHTML = new Date().toLocaleString();
-      }, 1000);
+function updateTime() {
+  document.querySelector("#timeElement").textContent =
+    new Date().toLocaleString();
+}
+updateTime();
+setInterval(updateTime, 1000);
 
 // Make the DIV element draggable:
-dragElement(document.getElementById("mydiv"));
+function updateTime() {
+  document.querySelector("#timeElement").textContent =
+    new Date().toLocaleString();
+}
+updateTime();
+setInterval(updateTime, 1000);
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;

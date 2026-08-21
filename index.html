@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-
+  <head>
+    <script type="module" src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
   <body style="background-color: #c9ffcf; background-image: url(./bkg.png); background-size: cover; font-family: Arial, Helvetica, sans-serif;">
     <div style="position: absolute; width: 99.5%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between;">
       <p style="margin-left: 16px;">
         WispOS
       </p>
-      <p id="timeElement" style="margin-right: 16px;">
-        6/21/2023 3:41 PM
-      </p>
+      <p id="timeElement" style="margin-right: 16px;"></p>
     </div>
     <div class="window" id="mydiv" style="border: solid; background-color: pink; width: fit-content; border-radius:20px; padding: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
        <div class="windowheader" id="mydivheader" style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.25); color: #fff; justify-content: space-between;">
         <p>
           drag this
         </p>
-        <div class="closebutton" id="welcomeclose" style="(styles)"></div>
-        <div id="welcomeclose" style="width: 16px; height: 16px; cursor: pointer; background-color: #EC6B5E; border-radius: 16px; border: solid 1px rgba(0, 0, 0, 0.25); margin-left: 6px;"></div>
+        <div id="welcomeclose" class="closebutton"></div>
         <p style="cursor: pointer" id="welcomeopen">WispOS</p>
         <div style="width: 16px; margin-right: 6px; height: 16px;"></div>
        </div>
@@ -38,7 +38,6 @@
         <p><abbr title="abbreviation">abbr</abbr> is a tag that marks an abbreviated term</p>
         <p style="color: red"> RED </p>
     </div>
-    <script src="script.js"></script>
     <head>
       <script type="module" src="./script.js"></script>
       <link rel="stylesheet" type="text/css" href="style.css" />
